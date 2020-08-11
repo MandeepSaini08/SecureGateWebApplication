@@ -1,0 +1,14 @@
+<asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Name can contain only alphabets" 
+          ValidationExpression="/^([A-Za-z0-9]+|[a-zA-Z0-9]+\s{1}[a-zA-Z0-9]{1,}|[a-zA-Z0-9]+\s{1}[a-zA-Z0-9]{3,}\s{1}[a-zA-Z0-9]{1,})$/g" 
+          ControlToValidate="txtname" ForeColor="Red"></asp:RegularExpressionValidator>
+        
+ <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="Username can contain only alphabets,numbers or specialcharactrer"_"" 
+           ControlToValidate="txtuser" ValidationExpression="^[a-z0-9_-]{3,15}$" ForeColor="Red"></asp:RegularExpressionValidator>
+       
+<asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ErrorMessage="Address can contain only alphabets" 
+          ValidationExpression="/^([a-zA-Z0-9]+|[a-zA-Z0-9]+\s{1}[a-zA-Z0-9]{1,}|[a-zA-Z0-9]+\s{1}[a-zA-Z0-9]{3,}\s{1}[a-zA-Z0-9]{1,})$/g"
+           ControlToValidate="txtadd" ForeColor="Red"></asp:RegularExpressionValidator>
+        
+<asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ErrorMessage="Password must be 8 characters long minimum"
+          ValidationExpression="^([a-zA-Z0-9@#$%^&+=*]{8,30})$" ControlToValidate="txtpass" ForeColor="Red"></asp:RegularExpressionValidator><div class="input-group mb-3">
+        
